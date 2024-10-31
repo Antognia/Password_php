@@ -22,7 +22,7 @@ echo "La password deve essere lunga almeno 8 caratteri";
 
 // 2. pssword contiene almeno un numero
 
-if (is_numeric($password)){
+if (preg_match($password)){
   echo " La password contiene almeno un numero";
 }else{
   echo " La password deve contenere almeno un numero";"
